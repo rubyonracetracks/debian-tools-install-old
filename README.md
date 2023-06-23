@@ -1,5 +1,5 @@
 # Install Development Tools for Debian-Based Linux
-This [Ruby on Racetracks](http://www.rubyonracetracks.com/) repository contains scripts for automatically installing software tools in Debian Linux or its derivatives.  These tools include the Geany editor, the KeePassXC password manager, DB Browser for SQLite, Pgweb (PostgreSQL database browser), the SearchMonkey file search tool, and xdot (Graphviz graph viewer).
+This [Ruby on Racetracks](http://www.rubyonracetracks.com/) repository contains scripts for automatically installing software tools in Debian Linux or its derivatives.  These tools include the Geany code editor, the KeePassXC password manager, DB Browser for SQLite, Pgweb (PostgreSQL database browser), the SearchMonkey file search tool, and xdot (Graphviz graph viewer).
 
 ## Prerequisites
 * Debian-based Linux environment
