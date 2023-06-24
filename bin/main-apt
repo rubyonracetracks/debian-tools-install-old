@@ -5,8 +5,6 @@
 # as succeeding in spite of errors or failures.
 set -eo pipefail
 
-bin/apt-get-update
-
 # Additional web browsers (for viewing web pages in a variety of browsers)
 bin/apt-install-and-print-version 'chromium'
 bin/apt-install-and-print-version 'palemoon'
