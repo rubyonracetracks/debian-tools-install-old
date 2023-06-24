@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# NOTE: set -o pipefail is needed to ensure that any error or failure causes the whole pipeline to fail.
+# Without this specification, the CI status will provide a false sense of security by showing builds
+# as succeeding in spite of errors or failures.
+set -eo pipefail
+
+bin/apt-get-update
+
+# Additional web browsers (for viewing web pages in a variety of browsers)
+bin/apt-install-and-print-version 'chromium'
+bin/apt-install-and-print-version 'palemoon'
+
+bin/apt-install-and-print-version 'geany' # Code editor
+bin/apt-install-and-print-version 'keepassxc' # Password manager
+bin/apt-install-and-print-version 'searchmonkey' # Search engine for files
+bin/apt-install-and-print-version 'sqlitebrowser' # Browser for viewing SQLite database
+bin/apt-install-and-print-version 'xdot' # For viewing .dot files

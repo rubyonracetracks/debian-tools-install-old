@@ -5,7 +5,8 @@
 # as succeeding in spite of errors or failures.
 set -eo pipefail
 
-# Alternate web browser (good for seeing how universal your app is)
-echo '--------------------------------'
-echo 'sudo apt-get install -y palemoon'
-sudo apt-get install -y palemoon
+PACKAGE_NAME="$1"
+
+echo '-------------------------------------'
+echo "sudo apt-get install -y $PACKAGE_NAME"
+sudo apt-get install -y "$PACKAGE_NAME"
